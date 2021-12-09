@@ -4,7 +4,7 @@ class Block {
     constructor( index = 0, previousHash = null, data='Genesis') {
         this.index = index;
         this.previousHash = previousHash;
-        this.hash = hash.generateHash();
+        this.hash = this.generateHash();
         this.data = data;
         this.timeStamp = new Date();
     }
